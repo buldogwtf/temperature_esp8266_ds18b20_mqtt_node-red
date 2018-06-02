@@ -1,0 +1,97 @@
+[
+    {
+        "id": "e8522cc2.20b7a",
+        "type": "mqtt in",
+        "z": "851f30e7.a2bc8",
+        "name": "Temp DS18",
+        "topic": "sensors/DS18B20/temperature",
+        "qos": "2",
+        "broker": "12088b5.2fcdd75",
+        "x": 283,
+        "y": 317,
+        "wires": [
+            [
+                "8b494581.9773d8",
+                "a9eb37ac.683ca8"
+            ]
+        ]
+    },
+    {
+        "id": "8b494581.9773d8",
+        "type": "ui_gauge",
+        "z": "851f30e7.a2bc8",
+        "name": "",
+        "group": "74ce4a30.a726b4",
+        "order": 7,
+        "width": "2",
+        "height": "2",
+        "gtype": "gage",
+        "title": "DS18B20",
+        "label": "",
+        "format": "{{value}}",
+        "min": "-40",
+        "max": "40",
+        "colors": [
+            "#0080ff",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 541,
+        "y": 288,
+        "wires": []
+    },
+    {
+        "id": "a9eb37ac.683ca8",
+        "type": "debug",
+        "z": "851f30e7.a2bc8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 552,
+        "y": 342,
+        "wires": []
+    },
+    {
+        "id": "12088b5.2fcdd75",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "74ce4a30.a726b4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Weer",
+        "tab": "902ffad6.38cf58",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "902ffad6.38cf58",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Domotica",
+        "icon": "dashboard",
+        "order": 1
+    }
+]
